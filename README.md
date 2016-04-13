@@ -5,3 +5,22 @@
 [![Dependencies](http://img.shields.io/david/codearoni/zxp-provider.svg?style=flat-square)](https://david-dm.org/cosdearoni/zxp-provider)
 
 [![Build Status](https://travis-ci.org/codearoni/zxp-provider.svg?branch=master)](https://travis-ci.org/codearoni/zxp-provider)
+
+
+# Usage
+
+zxp-provider has a simple interface for calling ZXPSignCmd. Most users will want to use the 'bin' property, which will provide the zxp binary appropriate to your OS.
+
+```javascript
+var zxp = require('zxp-provider').bin;
+```
+
+If you would like to manually choose the executable, zxp-provider provides an interface for that as well.
+
+```javascript
+var zxpWin32 = require('zxp-provider').win32;
+
+var zxpWin64 = require('zxp-provider').win64;
+
+var zxpOsx = require('zxp-provider').osx;
+```
