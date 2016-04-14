@@ -6,6 +6,13 @@ var path = require('path'),
 
 describe('zxp.js', function () {
 
+    it('Should return the paths as strings', function () {
+        expect(zxp.bin).to.be.a('string');
+        expect(zxp.win32).to.be.a('string');
+        expect(zxp.win64).to.be.a('string');
+        expect(zxp.osx).to.be.a('string');
+    });
+
     it('Should populate the path based on the os', function () {
         expect(zxp.bin.length).to.not.equal(0);
     });
