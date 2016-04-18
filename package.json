@@ -4,8 +4,8 @@
   "description": "Provides the ZXPSignCmd executable for signing Adobe extensions.",
   "main": "lib/zxp.js",
   "scripts": {
-    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec",
     "hint": "jshint ./lib",
+    "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec",
     "test-ci": "npm run hint && npm run test"
   },
   "keywords": [
