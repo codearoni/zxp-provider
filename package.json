@@ -1,6 +1,6 @@
 {
   "name": "zxp-provider",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Provides the ZXPSignCmd executable for signing Adobe extensions.",
   "main": "lib/zxp.js",
   "scripts": {
