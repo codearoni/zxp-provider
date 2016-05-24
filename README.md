@@ -3,10 +3,9 @@
 > A simple, lightweight provider for ZXPSignCmd - the tool used to sign Adobe extensions
 
 [![Dependencies](http://img.shields.io/david/codearoni/zxp-provider.svg?branch=master)](https://david-dm.org/codearoni/zxp-provider)
-
 [![Build Status](https://travis-ci.org/codearoni/zxp-provider.svg?branch=master)](https://travis-ci.org/codearoni/zxp-provider)
-
 [![Coverage Status](https://coveralls.io/repos/github/codearoni/zxp-provider/badge.svg?branch=master)](https://coveralls.io/github/codearoni/zxp-provider?branch=master)
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 # Usage
 
@@ -30,6 +29,3 @@ var zxpOsx = require('zxp-provider').osx;
 zxp-provider uses the latest version of ZXPSignCmd (as of 04/2016) v3.0.30
 
 [CEP-Resources](https://github.com/Adobe-CEP/CEP-Resources)
-
-# License
-MIT
