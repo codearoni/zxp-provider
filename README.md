@@ -26,6 +26,9 @@ var zxpOsx = require('zxp-provider').osx;
 ```
 
 # Notes
-zxp-provider uses the latest version of ZXPSignCmd (as of 04/2016) v3.0.30
+
+zxp-provider v1.0.x - ZxpSignCmd v3.0.30
+
+zxp-provider v1.1.x - ZxpSignCmd v4.0.7
 
 [CEP-Resources](https://github.com/Adobe-CEP/CEP-Resources)
