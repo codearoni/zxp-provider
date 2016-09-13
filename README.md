@@ -7,6 +7,12 @@
 [![Coverage Status](https://coveralls.io/repos/github/codearoni/zxp-provider/badge.svg?branch=master)](https://coveralls.io/github/codearoni/zxp-provider?branch=master)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
+# Installation
+
+```bash
+npm install zxp-provider
+```
+
 # Usage
 
 zxp-provider has a simple interface for calling ZXPSignCmd. Most users will want to use the 'bin' property, which will provide the zxp binary appropriate to your OS.
