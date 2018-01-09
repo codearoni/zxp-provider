@@ -6,7 +6,7 @@ const os = require('os');
 
 if (os.type() === 'Darwin') {
     console.log('Updating permissions for /bin/osx...');
-    fs.chmod(path.resolve('./bin/osx/ZXPSignCmd'), 0755, function (err) {
+    fs.chmod(path.resolve('./bin/osx/ZXPSignCmd'), '755', function (err) {
         if (err) {
             throw err;
         } else {
