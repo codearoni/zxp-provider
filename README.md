@@ -4,6 +4,7 @@
 
 [![Dependencies](http://img.shields.io/david/codearoni/zxp-provider.svg?branch=master)](https://david-dm.org/codearoni/zxp-provider)
 [![Build Status](https://travis-ci.org/codearoni/zxp-provider.svg?branch=master)](https://travis-ci.org/codearoni/zxp-provider)
+[![Build status](https://ci.appveyor.com/api/projects/status/m3igtkl3lishgr5l?svg=true)](https://ci.appveyor.com/project/codearoni/zxp-provider)
 [![Coverage Status](https://coveralls.io/repos/github/codearoni/zxp-provider/badge.svg?branch=master)](https://coveralls.io/github/codearoni/zxp-provider?branch=master)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
