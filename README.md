@@ -24,6 +24,7 @@ var zxp = require('zxp-provider').bin;
 
 If you would like to manually choose the executable, zxp-provider provides an interface for that as well.
 
+
 ```javascript
 var zxpWin32 = require('zxp-provider').win32;
 
@@ -31,6 +32,12 @@ var zxpWin64 = require('zxp-provider').win64;
 
 var zxpOsx = require('zxp-provider').osx;
 ```
+
+```javascript
+var zxp = require('zxp-provider').env;
+```
+
+Returns value of environment's variable called "ZXPCMD" if exists (usefull if you want to specify your path).
 
 # Notes
 

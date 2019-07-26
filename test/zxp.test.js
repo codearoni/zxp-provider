@@ -28,4 +28,7 @@ describe('zxp.js', function () {
     it('Should populate the path for osx', function () {
         expect(zxp.osx.length).to.not.equal(0);
     });
+    it('Should return null', function () {
+        expect(zxp.env).to.be.null;
+    });
 });
