@@ -16,26 +16,27 @@ npm install zxp-provider
 
 # Usage
 
-zxp-provider has a simple interface for calling ZXPSignCmd. Most users will want to use the 'bin' property, which will provide the zxp binary appropriate to your OS.
+zxp-provider has a simple interface for calling ZXPSignCmd. Most users will want to call zxp-provider with no arguments. This will return the latest version of ZXPSignCmd, for your current running operating system.
 
 ```javascript
-var zxp = require('zxp-provider').bin;
+const zxpProvider = require('zxp-provider');
+const zxp = zxpProvider(); // returns the lastest version for the current operation system
 ```
 
-If you would like to manually choose the executable, zxp-provider provides an interface for that as well.
+If you would like to manually choose the version of ZXPSignCmd, an interface is provided for that. Please see CEP-Resources if you're unsure what versions are available. If you would like, zxp-provider also contains an Array of supported versions.
 
 ```javascript
-var zxpWin32 = require('zxp-provider').win32;
+const chosenVersion = zxpProvider.supportedVersions[0]; // select the oldest version of ZXPSignCmd
+const zxp = zxpProvider({ version: chosenVersion });
+```
 
-var zxpWin64 = require('zxp-provider').win64;
+If you would like to manually select the os, you can do that as well. zxp-provider exposes an object containing all of the supported versions.
 
-var zxpOsx = require('zxp-provider').osx;
+```javascript
+const win64 = zxpProvider.supportedPlatforms.win64; // manually select windows 64 bit
+const zxp = zxpProvider({ os: win64 })
 ```
 
 # Notes
-
-zxp-provider v1.0.x - ZxpSignCmd v3.0.30
-
-zxp-provider v1.1.x - ZxpSignCmd v4.0.7
 
 [CEP-Resources](https://github.com/Adobe-CEP/CEP-Resources)
