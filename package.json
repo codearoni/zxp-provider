@@ -1,12 +1,12 @@
 {
   "name": "zxp-provider",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "Provides the ZXPSignCmd executable for signing Adobe extensions.",
   "main": "lib/zxp.js",
   "scripts": {
-    "hint": "jshint ./lib",
+    "lint": "eslint ./lib",
     "test": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec",
-    "test-ci": "npm run hint && npm run test",
+    "test-ci": "npm run lint && npm run test",
     "postinstall": "node ./postInstall.js"
   },
   "keywords": [
@@ -16,7 +16,7 @@
   ],
   "author": "codearoni",
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=12.0.0"
   },
   "repository": {
     "type": "git",
@@ -24,11 +24,11 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "chai": "^4.1.2",
-    "coveralls": "^3.0.0",
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.11",
+    "eslint": "^6.8.0",
     "istanbul": "^0.4.3",
-    "jshint": "^2.9.1",
-    "mocha": "^5.0.4",
+    "mocha": "^7.1.1",
     "mocha-lcov-reporter": "^1.2.0"
   }
 }

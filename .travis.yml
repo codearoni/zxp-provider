@@ -1,8 +1,7 @@
 langauge: node_js
 node_js:
-    - "9"
-    - "8"
-    - "6"
+    - "12"
+    - "13"
 
 install:
     - npm install
