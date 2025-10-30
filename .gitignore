@@ -3,3 +3,4 @@ coverage
 *.log
 *.p12
 .DS_Store
+.idea
