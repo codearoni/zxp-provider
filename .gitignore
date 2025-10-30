@@ -2,3 +2,4 @@ node_modules
 coverage
 *.log
 *.p12
+.DS_Store
