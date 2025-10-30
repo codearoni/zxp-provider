@@ -1,8 +1,8 @@
 environment:
     matrix:
     # node.js
-    - nodejs_version: "12"
-    - nodejs_version: "13"
+    - nodejs_version: "22"
+    - nodejs_version: "24"
 
 platform:
     - x86
@@ -15,4 +15,5 @@ install:
 test_script:
   - npm run test-ci
 
-build: off 
+build_script:
+  - npm run ci
