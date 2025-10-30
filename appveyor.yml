@@ -12,8 +12,8 @@ install:
   - ps: Install-Product node $env:nodejs_version $env:platform
   - npm install
 
+build_script:
+  - echo "No build step required for this Node.js project"
+
 test_script:
   - npm run test-ci
-
-build_script:
-  - npm run ci
