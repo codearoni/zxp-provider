@@ -26,7 +26,7 @@ describe('zxp.js', function () {
     this.timeout(10000);
 
     it('Should grab the latest version', () => {
-        expect(zxpProvider()).to.contain('4.1.1');
+        expect(zxpProvider()).to.contain('4.1.3');
     });
 
     it('Should throw when a bad version is provided', () => {
