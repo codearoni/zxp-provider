@@ -66,6 +66,7 @@ describe('zxp.js', function () {
         const paths = [];
 
         zxpProvider.supportedVersions.forEach((version) => {
+            console.log('Testing versions:', zxpProvider.supportedVersions);
             Object.values(zxpProvider.supportedPlatforms).forEach((os) => {
                 const filePath = zxpProvider({ version: version, os: os });
                 paths.push(filePath);
